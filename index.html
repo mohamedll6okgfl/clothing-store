@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Thread - Clothing Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <h1 class="brand"><a href="index.html">Urban Thread</a></h1>
+      <nav class="nav-links">
+        <a href="Men.html">Men</a>
+        <a href="Women.html">Women</a>
+        <a href="Accessories.html">Accessories</a>
+        <a href="sale.html" class="sale-link">Sale</a>
+      </nav>
+      <div class="nav-actions">
+        <input type="text" placeholder="Search products...">
+        <button class="icon-btn" aria-label="View profile">U</button>
+        <button class="icon-btn" aria-label="View cart">C</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Collection 2026</p>
+          <h2>Best Sellers</h2>
+          <p class="hero-text">
+            Discover our most-loved pieces. Timeless style, exceptional quality,
+            and a refined ashen-white shopping experience.
+          </p>
+          <button>Shop Best Sellers</button>
+        </div>
+        <div class="hero-image">Featured Lookbook</div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container feature-grid">
+        <article class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <h3>Free Shipping</h3>
+            <p>On orders over $50</p>
+          </div>
+        </article>
+        <article class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <h3>30-Day Returns</h3>
+            <p>Easy and hassle-free</p>
+          </div>
+        </article>
+        <article class="feature-item">
+          <span class="feature-dot"></span>
+          <div>
+            <h3>Secure Payment</h3>
+            <p>Your data is protected</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container listing-head">
+      <h2>New Arrivals</h2>
+      <a href="Men.html">View All</a>
+    </section>
+
+    <section class="container product-grid section-gap" id="products">
+      <article class="product-card">
+        <div class="product-image">Classic Denim Jacket</div>
+        <h3>Classic Denim Jacket</h3>
+        <p class="stars">★★★★☆ <span>(128)</span></p>
+        <div class="product-meta">
+          <p class="price">$89.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">Cotton Crew Neck Tee</div>
+        <h3>Cotton Crew Neck Tee</h3>
+        <p class="stars">★★★★☆ <span>(342)</span></p>
+        <div class="product-meta">
+          <p class="price">$24.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">Slim Fit Chinos</div>
+        <h3>Slim Fit Chinos</h3>
+        <p class="stars">★★★★☆ <span>(215)</span></p>
+        <div class="product-meta">
+          <p class="price">$59.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">Oversized Hoodie</div>
+        <h3>Oversized Hoodie</h3>
+        <p class="stars">★★★★☆ <span>(189)</span></p>
+        <div class="product-meta">
+          <p class="price">$69.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="container details-layout section-gap">
+      <article class="panel" id="details">
+        <h2>Product Details</h2>
+        <h3>Classic Denim Jacket</h3>
+        <p>
+          A premium ashen-washed denim jacket crafted for all-season styling.
+          Designed with structured shoulders, soft lining, and durable hardware.
+        </p>
+        <ul>
+          <li><strong>Material:</strong> Cotton blend denim</li>
+          <li><strong>Sizes:</strong> S, M, L, XL</li>
+          <li><strong>Color:</strong> Ash Blue</li>
+          <li><strong>Care:</strong> Machine wash cold, hang dry</li>
+        </ul>
+      </article>
+
+      <div class="side-stack">
+        <article class="panel" id="cart">
+          <h2>Cart</h2>
+          <div class="cart-list">
+            <div class="cart-item">
+              <span>Classic Denim Jacket</span>
+              <span>$89.99</span>
+            </div>
+            <div class="cart-item">
+              <span>Cotton Crew Neck Tee x2</span>
+              <span>$49.98</span>
+            </div>
+            <div class="cart-item total">
+              <span>Total</span>
+              <span>$139.97</span>
+            </div>
+          </div>
+          <button class="secondary-btn">Update Cart</button>
+        </article>
+
+        <article class="panel" id="payment">
+          <h2>Payment</h2>
+          <form class="payment-form">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="Jane Doe" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="jane@example.com" required>
+
+            <label for="card-number">Card Number</label>
+            <input id="card-number" type="text" placeholder="1234 5678 9012 3456" required>
+
+            <div class="form-row">
+              <div>
+                <label for="expiry">Expiry Date</label>
+                <input id="expiry" type="text" placeholder="MM/YY" required>
+              </div>
+              <div>
+                <label for="cvv">CVV</label>
+                <input id="cvv" type="password" placeholder="123" required>
+              </div>
+            </div>
+
+            <button type="submit">Pay $139.97</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Urban Thread</h3>
+        <p>Contemporary clothing for the modern lifestyle.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <p><a href="Men.html">Men's Clothing</a></p>
+        <p><a href="Women.html">Women's Clothing</a></p>
+        <p><a href="Accessories.html">Accessories</a></p>
+        <p><a href="sale.html">Sale Items</a></p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Contact Us</p>
+        <p>Shipping Info</p>
+        <p>Returns</p>
+      </div>
+      <div>
+        <h4>Stay Connected</h4>
+        <p>Subscribe for exclusive offers</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
